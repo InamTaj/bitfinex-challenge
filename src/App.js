@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import { OrderBook } from './components/order-book';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="flex flex-col">
+      <header className="flex justify-center text-4xl">
+        Bitfinex Challenge
       </header>
+      <div className="my-8">
+        <OrderBook />
+      </div>
     </div>
   );
 }
